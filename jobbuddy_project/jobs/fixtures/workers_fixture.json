@@ -1,0 +1,652 @@
+[
+  {
+    "model": "jobs.user",
+    "pk": 1,
+    "fields": {
+      "username": "arun_plumber",
+      "email": "arun.kumar@gmail.com",
+      "first_name": "Arun",
+      "last_name": "Kumar",
+      "password": "pbkdf2_sha256$260000$samplehash",
+      "role": "worker",
+      "is_active": true
+    }
+  },
+  {
+    "model": "jobs.workerprofile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "skills": "Water pipe installation, leak repair, bathroom fittings",
+      "availability": "Full-time",
+      "rating": 4.8,
+      "verified": true,
+      "total_jobs": 25
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 1,
+    "fields": {
+      "worker": 1,
+      "title": "Kitchen Sink Repair",
+      "description": "Fixed leaking pipes in Kochi apartment"
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 2,
+    "fields": {
+      "worker": 1,
+      "title": "Bathroom Fitting Installation",
+      "description": "Installed modular fittings at ABC Flats"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "worker": 1,
+      "comment": "Quick and reliable, fixed my kitchen sink in no time!",
+      "rating": 5,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "worker": 1,
+      "comment": "Very professional and affordable.",
+      "rating": 4,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.user",
+    "pk": 2,
+    "fields": {
+      "username": "ramesh_driver",
+      "email": "ramesh.nair@gmail.com",
+      "first_name": "Ramesh",
+      "last_name": "Nair",
+      "password": "pbkdf2_sha256$260000$samplehash",
+      "role": "worker",
+      "is_active": true
+    }
+  },
+  {
+    "model": "jobs.workerprofile",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "skills": "Car, taxi, and truck driving; GPS navigation",
+      "availability": "Full-time",
+      "rating": 4.9,
+      "verified": true,
+      "total_jobs": 40
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 3,
+    "fields": {
+      "worker": 2,
+      "title": "Long-Distance Driving",
+      "description": "Transported goods safely across Kerala"
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 4,
+    "fields": {
+      "worker": 2,
+      "title": "Personal Cab Service",
+      "description": "VIP cab services for private clients"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 3,
+    "fields": {
+      "user": 2,
+      "worker": 2,
+      "comment": "Safe and punctual driver, highly recommended.",
+      "rating": 5,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 4,
+    "fields": {
+      "user": 2,
+      "worker": 2,
+      "comment": "Very polite and professional.",
+      "rating": 4,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.user",
+    "pk": 3,
+    "fields": {
+      "username": "manoj_mechanic",
+      "email": "manoj.das@gmail.com",
+      "first_name": "Manoj",
+      "last_name": "Das",
+      "password": "pbkdf2_sha256$260000$samplehash",
+      "role": "worker",
+      "is_active": true
+    }
+  },
+  {
+    "model": "jobs.workerprofile",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "skills": "Bike repair, car servicing, engine tuning",
+      "availability": "Full-time",
+      "rating": 4.7,
+      "verified": true,
+      "total_jobs": 30
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 5,
+    "fields": {
+      "worker": 3,
+      "title": "Bike Engine Overhaul",
+      "description": "Repaired multiple bike engines in Kozhikode"
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 6,
+    "fields": {
+      "worker": 3,
+      "title": "Home Bike Servicing",
+      "description": "On-site bike servicing for local customers"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 5,
+    "fields": {
+      "user": 3,
+      "worker": 3,
+      "comment": "Expert mechanic, fixed my bike in 2 hours.",
+      "rating": 5,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 6,
+    "fields": {
+      "user": 3,
+      "worker": 3,
+      "comment": "Honest and skilled professional.",
+      "rating": 4,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.user",
+    "pk": 4,
+    "fields": {
+      "username": "deepak_electrician",
+      "email": "deepak.varma@gmail.com",
+      "first_name": "Deepak",
+      "last_name": "Varma",
+      "password": "pbkdf2_sha256$260000$samplehash",
+      "role": "worker",
+      "is_active": true
+    }
+  },
+  {
+    "model": "jobs.workerprofile",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "skills": "Home wiring, appliance repair, circuit troubleshooting",
+      "availability": "Full-time",
+      "rating": 4.6,
+      "verified": true,
+      "total_jobs": 28
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 7,
+    "fields": {
+      "worker": 4,
+      "title": "LED Lighting Installation",
+      "description": "Installed LED lighting system in a villa"
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 8,
+    "fields": {
+      "worker": 4,
+      "title": "Home Wiring Repair",
+      "description": "Repaired faulty home wiring in apartment complex"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 7,
+    "fields": {
+      "user": 4,
+      "worker": 4,
+      "comment": "Safe and efficient work, highly recommended.",
+      "rating": 5,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 8,
+    "fields": {
+      "user": 4,
+      "worker": 4,
+      "comment": "Affordable and timely service.",
+      "rating": 4,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.user",
+    "pk": 5,
+    "fields": {
+      "username": "sanjay_carpenter",
+      "email": "sanjay.pillai@gmail.com",
+      "first_name": "Sanjay",
+      "last_name": "Pillai",
+      "password": "pbkdf2_sha256$260000$samplehash",
+      "role": "worker",
+      "is_active": true
+    }
+  },
+  {
+    "model": "jobs.workerprofile",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "skills": "Furniture making, woodwork, cabinet installation",
+      "availability": "Full-time",
+      "rating": 4.7,
+      "verified": true,
+      "total_jobs": 20
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 9,
+    "fields": {
+      "worker": 5,
+      "title": "Custom Wardrobe",
+      "description": "Handmade wardrobe for a residential home"
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 10,
+    "fields": {
+      "worker": 5,
+      "title": "Coffee Table Set",
+      "description": "Custom coffee table and chairs"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 9,
+    "fields": {
+      "user": 5,
+      "worker": 5,
+      "comment": "Beautiful craftsmanship, very happy with my wardrobe.",
+      "rating": 5,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 10,
+    "fields": {
+      "user": 5,
+      "worker": 5,
+      "comment": "Reliable and punctual.",
+      "rating": 4,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.user",
+    "pk": 6,
+    "fields": {
+      "username": "ajith_painter",
+      "email": "ajith.kumar@gmail.com",
+      "first_name": "Ajith",
+      "last_name": "Kumar",
+      "password": "pbkdf2_sha256$260000$samplehash",
+      "role": "worker",
+      "is_active": true
+    }
+  },
+  {
+    "model": "jobs.workerprofile",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "skills": "Wall painting, texture painting, murals",
+      "availability": "Full-time",
+      "rating": 4.6,
+      "verified": true,
+      "total_jobs": 15
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 11,
+    "fields": {
+      "worker": 6,
+      "title": "Apartment Exterior Painting",
+      "description": "Painted 3 apartment exteriors in Palakkad"
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 12,
+    "fields": {
+      "worker": 6,
+      "title": "Cafe Mural",
+      "description": "Custom mural painting for local cafe"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 11,
+    "fields": {
+      "user": 6,
+      "worker": 6,
+      "comment": "Excellent finishing and professional attitude.",
+      "rating": 5,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 12,
+    "fields": {
+      "user": 6,
+      "worker": 6,
+      "comment": "Highly recommended painter in the city.",
+      "rating": 4,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.user",
+    "pk": 7,
+    "fields": {
+      "username": "latha_housekeeping",
+      "email": "latha.menon@gmail.com",
+      "first_name": "Latha",
+      "last_name": "Menon",
+      "password": "pbkdf2_sha256$260000$samplehash",
+      "role": "worker",
+      "is_active": true
+    }
+  },
+  {
+    "model": "jobs.workerprofile",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "skills": "Cleaning, organizing, laundry",
+      "availability": "Full-time",
+      "rating": 4.9,
+      "verified": true,
+      "total_jobs": 35
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 13,
+    "fields": {
+      "worker": 7,
+      "title": "Full House Cleaning",
+      "description": "Deep cleaning services for apartments"
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 14,
+    "fields": {
+      "worker": 7,
+      "title": "Laundry & Organization",
+      "description": "Home laundry and organization services"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 13,
+    "fields": {
+      "user": 7,
+      "worker": 7,
+      "comment": "Very thorough and trustworthy.",
+      "rating": 5,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 14,
+    "fields": {
+      "user": 7,
+      "worker": 7,
+      "comment": "Always on time and hardworking.",
+      "rating": 4,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.user",
+    "pk": 8,
+    "fields": {
+      "username": "harish_actech",
+      "email": "harish.nair@gmail.com",
+      "first_name": "Harish",
+      "last_name": "Nair",
+      "password": "pbkdf2_sha256$260000$samplehash",
+      "role": "worker",
+      "is_active": true
+    }
+  },
+  {
+    "model": "jobs.workerprofile",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "skills": "AC repair, installation, maintenance",
+      "availability": "Full-time",
+      "rating": 4.8,
+      "verified": true,
+      "total_jobs": 18
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 15,
+    "fields": {
+      "worker": 8,
+      "title": "Split AC Installation",
+      "description": "Installed multiple split ACs in residential apartments"
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 16,
+    "fields": {
+      "worker": 8,
+      "title": "AC Maintenance",
+      "description": "Annual AC maintenance for office spaces"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 15,
+    "fields": {
+      "user": 8,
+      "worker": 8,
+      "comment": "Quick response and fixed my AC efficiently.",
+      "rating": 5,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 16,
+    "fields": {
+      "user": 8,
+      "worker": 8,
+      "comment": "Reasonable pricing and skilled.",
+      "rating": 4,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.user",
+    "pk": 9,
+    "fields": {
+      "username": "rekha_tailor",
+      "email": "rekha.devi@gmail.com",
+      "first_name": "Rekha",
+      "last_name": "Devi",
+      "password": "pbkdf2_sha256$260000$samplehash",
+      "role": "worker",
+      "is_active": true
+    }
+  },
+  {
+    "model": "jobs.workerprofile",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "skills": "Stitching, embroidery, custom dresses",
+      "availability": "Full-time",
+      "rating": 4.9,
+      "verified": true,
+      "total_jobs": 50
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 17,
+    "fields": {
+      "worker": 9,
+      "title": "Wedding Outfit Stitching",
+      "description": "Tailored over 50 wedding outfits"
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 18,
+    "fields": {
+      "worker": 9,
+      "title": "Embroidery Work",
+      "description": "Embroidered kurtas and sarees"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 17,
+    "fields": {
+      "user": 9,
+      "worker": 9,
+      "comment": "Amazing stitch work, very satisfied.",
+      "rating": 5,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 18,
+    "fields": {
+      "user": 9,
+      "worker": 9,
+      "comment": "Highly creative and skilled.",
+      "rating": 4,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.user",
+    "pk": 10,
+    "fields": {
+      "username": "vinod_tutor",
+      "email": "vinod.kumar@gmail.com",
+      "first_name": "Vinod",
+      "last_name": "Kumar",
+      "password": "pbkdf2_sha256$260000$samplehash",
+      "role": "worker",
+      "is_active": true
+    }
+  },
+  {
+    "model": "jobs.workerprofile",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "skills": "Maths, Science tutoring, online classes",
+      "availability": "Full-time",
+      "rating": 4.9,
+      "verified": true,
+      "total_jobs": 45
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 19,
+    "fields": {
+      "worker": 10,
+      "title": "Online Math Tutoring",
+      "description": "1-on-1 tutoring for high school students"
+    }
+  },
+  {
+    "model": "jobs.workerportfolio",
+    "pk": 20,
+    "fields": {
+      "worker": 10,
+      "title": "Science Project Guidance",
+      "description": "Guided ICSE students for science projects"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 19,
+    "fields": {
+      "user": 10,
+      "worker": 10,
+      "comment": "Patient and knowledgeable teacher.",
+      "rating": 5,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "jobs.review",
+    "pk": 20,
+    "fields": {
+      "user": 10,
+      "worker": 10,
+      "comment": "My son improved a lot in math thanks to him.",
+      "rating": 5,
+      "created_at": "2025-09-23T00:00:00Z"
+    }
+  }
+]
