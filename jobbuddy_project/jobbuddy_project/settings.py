@@ -17,8 +17,8 @@ DEBUG = config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="127.0.0.1,localhost").split(",")
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://jobbuddyy.netlify.app",
-    "https://jobbuddybackend.onrender.com"
+    "https://jobbuddy-backend.onrender.com",
+    "https://jobbuddyy.netlify.app"
 ]
 
 
