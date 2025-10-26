@@ -16,6 +16,12 @@ DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="127.0.0.1,localhost").split(",")
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://jobbuddyy.netlify.app",
+    "https://jobbuddybackend.onrender.com"
+]
+
+
 # --------------------
 # Applications
 # --------------------
@@ -214,3 +220,5 @@ CELERY_ACCEPT_CONTENT = ["json"]
 CELERY_TASK_SERIALIZER = "json"
 CELERY_RESULT_SERIALIZER = "json"
 CELERY_TIMEZONE = "Asia/Kolkata"
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
